@@ -29,4 +29,5 @@ The app sends a request to Radio Eksen for retrieve last played track in every e
 Python 3.6.5
 Requests 2.18.4
 Json 2.0.9
+Pytz
   ```
