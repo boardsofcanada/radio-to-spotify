@@ -22,3 +22,11 @@ The app sends a request to Radio Eksen for retrieve last played track in every e
 * The script will ask a url for authorize when first run. You just need to copy url from opened web browser and paste it to script.*(After allow your developer account on opened browser.)* **Example** url of you need to paste --> http://localhost/?code=...,
 
 * After paste url, the script creates **refresh_token.txt** and writes refresh token code. The script needs this file to run the program.
+
+# Requirements (tested versions)
+
+  ```
+Python 3.6.5
+Requests 2.18.4
+Json 2.0.9
+  ```
