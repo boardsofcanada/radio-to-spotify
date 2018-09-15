@@ -5,9 +5,9 @@
 import base64
 import requests
 import urllib.parse
-import config
 import webbrowser
 import json
+import config
 
 def authorization_header_base64(client_id, client_secret):
     """
