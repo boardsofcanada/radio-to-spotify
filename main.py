@@ -8,7 +8,7 @@ import time
 import pytz
 from datetime import datetime
 import config
-import radioEksen
+import radio_eksen
 import spotify_api
 import spotify_auth
 
