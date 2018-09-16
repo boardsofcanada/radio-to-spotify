@@ -115,9 +115,9 @@ while True:
     if tracks == []:
         # this block runs only one time when code starts every
         # for not add songs that played before the program started
-        tracks = radioEksen.radio_eksen()
+        tracks = radio_eksen.radio_eksen()
     else:
-        current_tracks = radioEksen.radio_eksen()
+        current_tracks = radio_eksen.radio_eksen()
         if current_tracks != tracks:
             to_add_tracks = [track for track in current_tracks if track not in tracks]
             track_id = spotify_api.search_track(to_add_tracks[0], auth_header_bearer)
