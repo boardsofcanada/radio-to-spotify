@@ -30,7 +30,7 @@ def access_token_control(headers):
     """
         Checks whether the access token ends.
 
-        Arguments:
+        Params:
         header -- header of access token
             example -> '{Authorization: Bearer NgCXRK...MzYjw}'
 
