@@ -18,7 +18,7 @@ def search_track(keyw, header):
         Search the uri of track according to the given word.
         Only retrieves first result of the search.
 
-        Arguments:
+        Params:
         keyw -- search query keyword
             example -> 'Rammstein Mein Teil'
         header -- header of access token
@@ -47,7 +47,7 @@ def add_track_to_playlist(uri, playlist_id, header):
     """
         Adds track to given playlist id.
 
-        Arguments:
+        Params:
             uri -- uri of track.
                 example --> 'spotify:track:0h0smRHEjrkSFUhNWQh8SR'
             playlist_id -- id of the playlist to which the song will be added.
@@ -69,7 +69,7 @@ def list_playlist(header):
     """
         List playlists of the given user in config.py
 
-        Arguments:
+        Params:
             header -- header of access token
                 example -> '{Authorization: Bearer NgCXRK...MzYjw}'
 
@@ -95,7 +95,7 @@ def list_playlist(header):
 
 def create_playlist(user_id, header, playlist_name):
     """
-        Arguments:
+        Params:
             user_id -- id of the given user in config.py
             header -- header of access token
                 example -> '{Authorization: Bearer NgCXRK...MzYjw}'
