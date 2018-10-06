@@ -14,7 +14,7 @@ def authorization_header_base64(client_id, client_secret):
         Makes authorization header.
         Base 64 encoded string that contains the client ID and client secret key.
 
-        Arguments:
+        Params:
             client_id -- client id of your API which register to Spotify.
             client_secret -- client secret id of your API which register to Spotify.
     """
@@ -27,7 +27,7 @@ def request_authorization(client_id, redirect_uri, scope):
     """
         Sends a authorization request to the Spotify Accounts service.
 
-        Arguments:
+        Params:
             client_id -- client id of your API which register to Spotify.
             redirect_uri -- 'redirect uri' which you have been entered when you register your API.
             scope -- a space-separated list of scopes.
@@ -48,7 +48,7 @@ def get_token(auth_code, redirect_uri, auth_header):
     """
         Request refresh and access token.
 
-        Arguments:
+        Params:
             auth_code -- authorization code.
             redirect_uri -- 'redirect uri' which you have been entered when you register your API.
             auth_header -- base 64 encoded string that contains the client ID and client secret key.
@@ -75,7 +75,7 @@ def refresh_access_token(refresh_token, auth_header):
     """
         Requesting a refreshed access token.
 
-        Arguments:
+        Params:
             refresh_token --  the refresh token returned from the authorization code exchange.
             auth_header -- base 64 encoded string that contains the client ID and client secret key.
 
