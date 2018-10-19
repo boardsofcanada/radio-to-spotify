@@ -33,8 +33,8 @@ def search_track(keyw, header):
         }
     url = url + urllib.parse.urlencode(query_params)
     req = requests.get(url, headers=header)
-    items = req.json()['tracks']['items']
-    if req.status_code == 200:
+    if req.status_code == 200 and req.json()['tracks']:
+        items = req.json()['tracks']['items']
         if items != []:
             return items[0]['uri']
         else:
