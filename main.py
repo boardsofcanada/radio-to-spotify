@@ -118,7 +118,7 @@ while True:
         tracks = radio_eksen.radio_eksen()
     else:
         current_tracks = radio_eksen.radio_eksen()
-        if current_tracks != tracks:
+        if current_tracks != tracks and current_tracks != None:
             to_add_tracks = [track for track in current_tracks if track not in tracks]
             if to_add_tracks:
                 track_id = spotify_api.search_track(to_add_tracks[0], auth_header_bearer)
