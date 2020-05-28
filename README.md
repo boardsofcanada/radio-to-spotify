@@ -1,10 +1,10 @@
 # radio-eksen-spotify
 
-[Example playlist](https://open.spotify.com/user/powerslide1/playlist/0sVzeZN8E7HCGxJQ4XX0PE?si=mpH1i9IGT6quOvXpJFBS-A)
+[Example playlist](https://open.spotify.com/playlist/05ywtjzHKKQtXaIcMmZs8X?si=EUPQRf_DQbS5Cn_BRdXy_Q)
 
-I love discover new musics. Radio Eksen plays songs which I like so much and I don't know. Most of the time, I have been listening live but sometimes I can not. And, I found a solution for this problem.
+The app sends a request to each Radio Station for retrieve last played tracks in every each 3 minute. Then, searches the tracks and if tracks is available on Spotify, adds to playlist. Playlists create automatically every day.
 
-The app sends a request to Radio Eksen for retrieve last played track in every each one minute. Then, search the track and if track is available on Spotify, adds to playlist. Playlists create automatically every day.  
+Currently working on Dark Edge Radio and SomaFM. More stations can be add. Structure of RadioStation class is suit for this.
 
 # Usage
 
@@ -28,8 +28,6 @@ The app sends a request to Radio Eksen for retrieve last played track in every e
 # Requirements (tested versions)
 
   ```
-Python 3.6.5
-Requests 2.18.4
-Json 2.0.9
-Pytz
+Python >= 3.6
+Requests >= 2.20.0
   ```
